@@ -19,6 +19,7 @@ class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         if len(intervals) == 0:
             return []
+
         intervals.sort(key = lambda x : x[0])
 
         result = [intervals[0]]
@@ -31,5 +32,6 @@ class Solution:
 
         return result
 
+# Run and Test
 s = Solution()
 print (s.merge([[1,3],[2,6],[8,10],[15,18]]))
