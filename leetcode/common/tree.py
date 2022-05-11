@@ -12,11 +12,11 @@ def print_tree(root : TreeNode):
     if root.left != None:
         print_tree(root.left) 
     else:
-        print("NULL", end = " ")
+        print("null", end = " ")
 
     if root.right != None:
         print_tree(root.right)
     else:
-        print("NULL", end = " ")
+        print("null", end = " ")
 
     return
