@@ -25,6 +25,11 @@ import math
 
 class Solution:
     def isPalindrome(self, x: int) -> bool:
+        """ Reverse string method
+        x = str(x)
+        return x == x[::-1]
+        """
+        
         if x < 0:
             return False
         
