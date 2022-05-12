@@ -1,4 +1,4 @@
-'''
+"""
 Given the root of a binary tree, flatten the tree into a "linked list":
 
 The "linked list" should use the same TreeNode class where the right child pointer points to the next node in the list and the left child pointer is always null.
@@ -16,7 +16,7 @@ Example 3:
 
 Input: root = [0]
 Output: [0]
-'''
+"""
 
 from typing import Optional
 from common.tree import TreeNode, print_tree
