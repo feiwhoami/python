@@ -18,6 +18,7 @@ Input: x = 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 """
+
 import math
 
 class Solution:
