@@ -42,7 +42,7 @@ class Solution:
         curr = 0
 
         for x in nums:
-            if x > nums[curr] and (curr == 0 or nums[curr] != nums[curr - 1]):
+            if x > nums[curr]:
                 curr += 1
                 nums[curr] = x
 
