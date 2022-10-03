@@ -31,18 +31,18 @@ from typing import List
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         idx = len(digits) - 1
-        carry = 1
+        carryon = 1
 
-        while idx >= 0 and carry != 0:
-            sum = digits[idx] + carry
+        while idx >= 0 and carryon != 0:
+            sum = digits[idx] + carryon
             digits[idx] = sum % 10
-            carry = sum // 10
+            carryon = sum // 10
             idx -= 1
 
-        if carry == 0:
+        if carryon == 0:
             return digits
         else:
-            return [carry] + digits
+            return [carryon] + digits
         
 # Run and Test
 s = Solution()
