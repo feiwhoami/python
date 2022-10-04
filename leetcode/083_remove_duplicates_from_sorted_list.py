@@ -11,7 +11,7 @@ Output: [1,2,3]
 """
 
 from typing import Optional
-from common import ListNode
+from common.list import ListNode
 
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
