@@ -14,7 +14,6 @@ Input: root = [1]
 Output: [1]
 """
 
-from optparse import Option
 from typing import Optional
 from typing import List
 from common.tree import TreeNode
@@ -27,7 +26,8 @@ class Solution:
 
         self._helper(root, result)
         return result
-        
+
+
     def _helper(self, root: Optional[TreeNode], result: List[int]):
         if root is None:
             return
