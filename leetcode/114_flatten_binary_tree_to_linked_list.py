@@ -28,7 +28,7 @@ class Solution:
         pre = None
         stack = [root]
 
-        while (len(stack) != 0):
+        while stack:
             cur = stack.pop()
             
             if cur.right != None:

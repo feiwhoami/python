@@ -19,7 +19,7 @@ from common.tree import TreeNode
 
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
-        if len(nums) == 0:
+        if not nums: 
             return None
  
         return self._helper(nums, 0, len(nums) - 1)

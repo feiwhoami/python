@@ -17,7 +17,7 @@ from typing import List
 
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        if len(intervals) == 0:
+        if not intervals: 
             return []
 
         intervals.sort(key = lambda x : x[0])
