@@ -19,8 +19,6 @@ Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 """
 
-import math
-
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         """ Reverse string method
@@ -32,15 +30,15 @@ class Solution:
             return False
         
         divider = 1
-        while math.floor(x / divider) >= 10:
+        while x // divider >= 10:
             divider *= 10
 
         while x != 0:
-            if math.floor(x / divider) != x % 10:
+            if x // divider != x % 10:
                 return False
             
-            x = math.floor(x % divider / 10)
-            divider = math.floor(divider / 100)
+            x = x % divider // 10
+            divider = divider // 100
 
         return True
 
