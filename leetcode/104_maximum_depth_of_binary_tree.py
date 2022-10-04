@@ -18,6 +18,7 @@ class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         return self._helper(root, 0)
 
+
     def _helper(self, node: Optional[TreeNode], curr_depth: int) -> int:
         if node is None:
             return curr_depth
