@@ -31,7 +31,7 @@ class Solution:
 
         for i in range(0, len(reverse_title)):
             num = ord(reverse_title[i]) - ord('A') + 1
-            res += num * pow(26, i)
+            res += num * (26 ** i)
 
         return res
 

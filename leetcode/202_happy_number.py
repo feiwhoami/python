@@ -26,15 +26,10 @@ class Solution:
         visited = set()
 
         while n != 1: 
-            str_n = str(n)
-            n = 0
-            for i in range(len(str_n)):
-                n += pow(int(str_n[i]), 2)
-
             if n in visited:
                 return False
-            else:
-                visited.add(n)
+            visited.add(n)
+            n = sum(int(i) ** 2 for i in str(n))
 
         return True
 
