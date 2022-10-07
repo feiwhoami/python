@@ -23,10 +23,22 @@ Output: false
 
 class Solution:
     def isHappy(self, n: int) -> bool:
-        while n >= 10:
+        visited = set()
+
+        while n != 1: 
             str_n = str(n)
             n = 0
             for i in range(len(str_n)):
                 n += pow(int(str_n[i]), 2)
 
-        return n == 1
+            if n in visited:
+                return False
+            else:
+                visited.add(n)
+
+        return True
+
+# Run and Test
+s = Solution()
+print(s.isHappy(2))
+print(s.isHappy(135))
