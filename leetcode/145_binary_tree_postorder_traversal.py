@@ -1,9 +1,9 @@
 """
-Given the root of a binary tree, return the preorder traversal of its nodes' values.
+Given the root of a binary tree, return the postorder traversal of its nodes' values.
 
 Example 1:
 Input: root = [1,null,2,3]
-Output: [1,2,3]
+Output: [3,2,1]
 
 Example 2:
 Input: root = []
@@ -19,7 +19,7 @@ from typing import List
 from common.tree import TreeNode
 
 class Solution:
-    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         res = []
         self._helper(root, res)
         return res
@@ -29,6 +29,6 @@ class Solution:
         if not node:
             return
 
-        res.append(node.val)
         self._helper(node.left, res)
         self._helper(node.right, res)
+        res.append(node.val)
