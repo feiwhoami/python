@@ -18,11 +18,10 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        i, j = 0, 0
-        while i < len(nums):
+        j = 0
+        for i in range (len(nums)):
             if nums[i] != 0:
                 tmp = nums[i]
                 nums[i] = nums[j]
                 nums[j] = tmp
                 j += 1
-            i += 1
