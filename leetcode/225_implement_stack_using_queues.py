@@ -29,13 +29,13 @@ myStack.pop(); // return 2
 myStack.empty(); // return False
 """
 
-import queue
+from queue import Queue
 
 class MyStack:
 
     def __init__(self):
-        self.up = queue.Queue()
-        self.down = queue.Queue()
+        self.up = Queue()
+        self.down = Queue()
 
 
     def push(self, x: int) -> None:

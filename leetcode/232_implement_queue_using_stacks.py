@@ -29,13 +29,13 @@ myQueue.pop(); // return 1, queue is [2]
 myQueue.empty(); // return false
 """
 
-import queue
+from queue import LifoQueue
 
 class MyQueue:
 
     def __init__(self):
-        self.up = queue.LifoQueue()
-        self.down = queue.LifoQueue()
+        self.up = LifoQueue()
+        self.down = LifoQueue()
 
 
     def push(self, x: int) -> None:
