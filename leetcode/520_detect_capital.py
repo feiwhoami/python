@@ -33,3 +33,7 @@ class Solution:
             or (first_letter_upper and not has_upper and has_lower) \
             or (not first_letter_upper and not has_upper and has_lower) \
             or (not has_upper and not has_lower)
+    
+    def detectCapitalUse2(self, word: str) -> bool:
+        return word.isupper() or word.islower() or word.istitle()
+
