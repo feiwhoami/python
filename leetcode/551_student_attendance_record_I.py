@@ -40,3 +40,7 @@ class Solution:
                 late_count = 0
 
         return True
+
+
+    def checkRecord(self, s: str) -> bool:
+        return "LLL" not in s and s.count('A') < 2
