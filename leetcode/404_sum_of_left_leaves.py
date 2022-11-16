@@ -12,7 +12,6 @@ Input: root = [1]
 Output: 0
 """
 
-from turtle import left
 from typing import Optional
 from typing import List
 from common.tree import TreeNode
