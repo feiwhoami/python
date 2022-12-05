@@ -25,7 +25,6 @@ The strings with the least index sum are "sad" and "happy".
 """
 
 from typing import List
-from collections import defaultdict
 
 class Solution:
     def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
